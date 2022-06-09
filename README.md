@@ -1,44 +1,68 @@
-# Honor-MagicBook-X15-Hackintosh
-Honor MagicBook X15 Hackintosh EFI
+# HONOR MagicBook X 15 | Intel® Core™ i3 (i3-10110U)
 
-### About Honor MagicBook X 15
-                
-Device  | Status
-------------- | -------------
-| Intel i5-10210U  | Works Perfectly Fine & Power Management ON! |
-| Intel UHD  | Works Perfectly Fine! |
-| 2x4 2400MHz RAM  | Works Perfectly Fine! |
-| 512GB KXG60ZNV512G NVMe  | Works Perfectly Fine! |
-| Intel Wireless-AC 9560 160MHz Wi-Fi | Works Perfectly Fine! Using native Wi-Fi. |
-| Intel Bluetooth  | Works! **Read Notes!** |
-| Battery  | Works Perfectly Fine! **Read Notes!**   |
-| I2C HID Touchpad | Works Perfectly Fine!  |
-| Realtek ALC256 | Works Perfectly Fine! |
+[![macOS](https://img.shields.io/badge/macOS-11.6.6-orange)](https://www.apple.com/uk/newsroom/2020/11/macos-big-sur-is-here)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.0-9cf)](https://github.com/acidanthera/OpenCorePkg)
+[![release](https://img.shields.io/badge/indir-son%20sürüm-blue.svg)](https://github.com/sutsurup/Honor-MagicBook-X15-Hackintosh/releases)
 
-                
+<img align="right" src="Images/honor_logo.svg" alt="Honor" width="200">
 
-### Notes
-- Change MLB, ROM etc. after installing macOS by using GenSMBIOS
-- You may can't connect to Apple Devices on Bluetooth. Reason is Airportitlwm.kext. I use Airportitlwm.kext for native Wi-Fi. If you want to connect Apple Devices, you have to replace it with itlwm.kext and you have to use Heliport to use Wi-Fi.
-- On Windows, when you limit battery percentage on PC Manager it also limits on macOS too. I didn't check time but at %74 battery i run 3 or 3.30 hours i guess, not sure.
-- Tested 10.15.7 Catalina and 12.0.1 Monterey. Big Sur should work fine.
-- OpenCore version is 0.7.6
+Türkçe | [English](#)
 
-                
-### Windows 10 + Monterey + Catalina
-![Windows 10 + Monterey + Catalina](https://www.technopat.net/sosyal/eklenti/monterey_catalina_windows10-png.1249437/ "Windows 10 + Monterey + Catalina")
+**macOS Versiyonu: 11.6.6**
 
-### Catalina 10.15.7
-![Catalina 10.15.7](https://www.technopat.net/sosyal/eklenti/magicbookx15_hackintosh_catalina-jpeg.1249465/ "Catalina 10.15.7")
+**OpenCore Versiyonu: v0.8.0**
 
-### Geekbench Score
-![Geekbench Score](https://www.technopat.net/sosyal/eklenti/magicbookx15_hackintosh_geekbench-jpeg.1249459/ "Geekbench Score")
+# Detaylar
 
-### CPU Values while running Geekbench
-![CPU Values while running Geekbench](https://www.technopat.net/sosyal/eklenti/magicbookx15_catalina_geekbench_values-jpeg.1249467/ "CPU Values while running Geekbench")
+    Tarih:        7 Haziran, 2022
+    Durum:        Stabil
+    Destek:       BIOS
+    Yapı:         OpenCore Bootloader kullanılarak, i5-10210U dosyaları ile i3-10110U cihaza uyarlanmıştır
 
-### Bluetooth
-![Bluetooth](https://www.technopat.net/sosyal/eklenti/bluetooth-png.1249436/ "Bluetooth")
+![Alt text](Images/Hackintosh.png)
 
-### Audio Outputs
-![Audio Outputs](https://www.technopat.net/sosyal/eklenti/taninmis_ses-png.1249438/ "Audio Outputs")
+## Donanım
+
+| ║▌║ **HONOR** ║▌║ | Detay                                                  |
+| ------------------- | ------------------------------------------- |
+| Model Ismi      | MagicBook X 15      |
+| Anakart           | 	BBR-WAX9-PCB     |
+| CPU              | Intel® Core™ i3-10110U Processor (4M Cache, up to 4.10 GHz)              |
+| RAM           | Micron 4GB+4GB 2400MHz DDR4    |
+| Dahili Grafik Kartı | Intel(R) HD Graphics 620 (1GB)                    |
+| Wi-Fi             | Intel(R) Wireless-AC 9560 160MHz |
+| Kamera          | HD Camera  |
+| Ses       | Realtek ALC256          |
+| Touchpad       | -                        |
+| BIOS Versiyonu      | 	10.0.19041.1                   |
+
+# Desteklenmeyen donanımlar
+
+    1. Parmak izi okuyucu
+    
+# Bilinen sorunlar
+
+    1. Uyku
+    2. Başlangıçta mouse imleci yavaşlaması (10 saniye kadar)
+
+## Uyumluluk
+Paylaştığım EFI klasörü, **macOS Big Sur 11.6.6 (20G624)** sürümününe kadar desteklenmektedir.
+macOS Monterey 12 ve üstü bir sürüm kuracaksanız, bir sonraki maddeyi uygulayın.
+
+## Yedeklerinizi alın
+**Yükleme talimatlarına geçmeden önce;** Sistemde kurulu Windows, Linux veya benzeri bir işletim sistemi var ise her ihtimale karşı **önemli yedeklerinizi almayı unutmayın.** Yanlış diski silme veya diski **APFS formatlama** esnasında disk yapısı bozulabilir. Yedeklerinizi [Yandex.Disk](https://disk.yandex.com.tr) tarzı çevrimiçi bir depolama alanına veya (var ise) harici diskinize depolamanızı öneriyorum.
+
+## İletişime geçin
+Website: https://sutsurup.com //
+Mail: [veyselfurkan@icloud.com](mailto:veyselfurkan@icloud.com)
+
+## Destek olun.
+Projeyi faydalı bulduysanız, kaynak bulma konusunda bana yardımcı olmak için bağış yapabilirsiniz:
+```
+₿ 1Q8CEMHTuecxPUJpEdpRiG6Bg2GVtzw4bN
+``` 
+<a href='https://github.com/sutsurup/sutsurup/blob/main/Donate.md'><img alt='Bağış' src='https://github.com/sutsurup/MSI-Hackintosh-Build/blob/main/Images/donate.png?raw=true' height='360px' width='375px'/></a>
+```
+QR koda tıklayarak alternatif seçeneklere ulaşabilirsiniz
+``` 
+Kolay gelsin!
